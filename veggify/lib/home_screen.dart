@@ -23,12 +23,12 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               ),
               ),
-              SizedBox(height: 20,),
+              SizedBox(height: 30,),
               Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: Text("Healthy \nvegan food for you" ,style: Theme.of(context).textTheme.headline1,),
               ), 
-              SizedBox(height: 20),             
+              SizedBox(height: 30),             
              
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
@@ -44,7 +44,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 
               ),
-              SizedBox(height: 30),
+              SizedBox(height: 40),
               Padding(
                 padding: const EdgeInsets.only(left: 300),
                 child: FlatButton(
@@ -58,47 +58,134 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 
                
-              SizedBox(height: 30),
-
-                 Container(
-                  height: 250,
-                  width: 270,
-                  child: Stack(
-                    children: <Widget>[
-                      Positioned(
-                        left: 30,
-                        bottom: 0,
-                        child: Container(
-                          height: 212,
-                          width: 156,
+              SizedBox(height: 70),
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  
+                  children: <Widget>[
+                     Container(
+                    height: 250,
+                    width: 200,
+                    child: Stack(
+                      children: <Widget>[
+                        Positioned(
+                          left: 30,
+                          bottom: 0,
+                          child: Container(
+                            height: 212,
+                            width: 160,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(34),
+                              color: Colors.white,
+                            ),
+                          ),
+                          
+                          
+                        ),
+                        Positioned(
+                          top: -20,
+                          left: 55,
+                          child: Container(
+                          height: 189,
+                          width: 112,
                           decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(34),
-                            color: Colors.white,
+                            image: DecorationImage(image: 
+                            AssetImage("assets/image_1.png"),
+                            ),
                           ),
                         ),
-                        
-                        
-                      ),
-                      Positioned(
-                        top: -20,
-                        left: 50,
-                        child: Container(
-                        height: 189,
-                        width: 112,
-                        decoration: BoxDecoration(
-                          image: DecorationImage(image: 
-                          AssetImage("assets/image_1.png"),
-                          ),
                         ),
-                      ),
-                      ),
-                      
+                        Positioned(
+                          top: 165,
+                          left: 55,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: <Widget>[
+                              Text("SAYVE", style: TextStyle(color: kTextColor, fontSize: 17,),
+                              textAlign: TextAlign.center,
+                              ),
+                              Text("Vegan \nWalnut Cheese", style: TextStyle(color: Colors.black, fontSize: 18),
+                              textAlign: TextAlign.center,
+                              ),
+                            ],
+                          ),
 
-                      
-                    ],
+                        ),
+                        
+
+                        
+                      ],
+                    ),
+
                   ),
 
+                   Container(
+                    height: 250,
+                    width: 200,
+                    child: Stack(
+                      children: <Widget>[
+                        Positioned(
+                          right: 30,
+                          bottom: 0,
+                          child: Container(
+                            height: 212,
+                            width: 160,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(34),
+                              color: Colors.white,
+                            ),
+                          ),
+                          
+                          
+                        ),
+                        Positioned(
+                          top: -5,
+                          left: -10,
+                          child: Container(
+                          height: 174,
+                          width: 202,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(image: 
+                            AssetImage("assets/2.png"),
+                            ),
+                          ),
+                        ),
+                        ),
+                        Positioned(
+                          top: 165,
+                          left: 40,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: <Widget>[
+                              Text("MIYOKO’S", style: TextStyle(color: kTextColor, fontSize: 17),
+                              textAlign: TextAlign.center,
+                              ),
+                              Text("Vegan \nCream Cheese", style: TextStyle(color: Colors.black, fontSize: 18),
+                              textAlign: TextAlign.center,
+                              ),
+                            ],
+                          ),
+
+                        ),
+                        
+
+                        
+                      ],
+                    ),
+
+                  ),
+                    
+                  ],
+                  
+                  
+
                 ),
+              ),
+
+                
+
+                
               
         ],
         

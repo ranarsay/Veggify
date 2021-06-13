@@ -1,6 +1,5 @@
 
 import 'package:flutter/material.dart';
-import 'package:veggify/home_screen.dart';
 
 class CategoryScreen extends StatelessWidget {
   static const route = "/categoryScreen"; 
