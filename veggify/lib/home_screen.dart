@@ -27,14 +27,15 @@ class _HomeScreenState extends State<HomeScreen> {
               Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: Text("Healthy \nvegan food for you" ,style: Theme.of(context).textTheme.headline1,),
-              ),              
+              ), 
+              SizedBox(height: 20),             
              
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 padding: EdgeInsets.only(left: 20),
                 child:  Row(
                     children: <Widget>[
-                      CategoryTitle(title: "Dairy", active: true,),
+                      CategoryTitle(title: "Dairy", active: true, ),
                       CategoryTitle(title: "Meat"),
                       CategoryTitle(title: "Bread"),
                       CategoryTitle(title: "Snack"),
@@ -43,18 +44,21 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 
               ),
-              SizedBox(height: 50),
+              SizedBox(height: 30),
               Padding(
-                padding: const EdgeInsets.only(left: 20),
+                padding: const EdgeInsets.only(left: 300),
                 child: FlatButton(
-                  onPressed: null, 
-                  child: Text("see more"), color: kTextColor,)
+                  onPressed: () {
+                    Navigator.of(context).pushReplacementNamed("/categoryScreen");
+                  },
+                  child: Text("see more"), textColor: kTextColor,
+                  )
                 
               
                 ),
                 
                
-              SizedBox(height: 25),
+              SizedBox(height: 30),
 
                  Container(
                   height: 250,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:veggify/category_screen.dart';
 import 'welcome_screen.dart';
 import 'home_screen.dart';
 
@@ -40,6 +41,7 @@ class _MyAppState extends State<MyApp> {
         routes: <String, WidgetBuilder> {
          "/welcome" : (BuildContext context) => WelcomeScreen(),
          "/home" : (BuildContext context) => HomeScreen(),
+         "/categoryScreen" : (BuildContext context) => CategoryScreen(),
         },
       ),
 
