@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:veggify/category_screen.dart';
 import 'welcome_screen.dart';
 import 'home_screen.dart';
+import 'product_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -42,6 +43,7 @@ class _MyAppState extends State<MyApp> {
          "/welcome" : (BuildContext context) => WelcomeScreen(),
          "/home" : (BuildContext context) => HomeScreen(),
          "/categoryScreen" : (BuildContext context) => CategoryScreen(),
+         "/productScreen" : (BuildContext context) => ProductScreen(),
         },
       ),
 

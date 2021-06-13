@@ -35,18 +35,19 @@ class _HomeScreenState extends State<HomeScreen> {
                 padding: EdgeInsets.only(left: 20),
                 child:  Row(
                     children: <Widget>[
-                      CategoryTitle(title: "Dairy", active: true, ),
-                      CategoryTitle(title: "Meat"),
-                      CategoryTitle(title: "Bread"),
-                      CategoryTitle(title: "Snack"),
-                      CategoryTitle(title: "Legume")
+                      FlatButton(onPressed: () {Navigator.of(context).pushReplacementNamed("/categoryScreen");}, child: Text("Dairy"), textColor: kTextColor,),
+                      FlatButton(onPressed: () {Navigator.of(context).pushReplacementNamed("/categoryScreen");}, child: Text("Meat"), textColor: Colors.black.withOpacity(0.4),),
+                      FlatButton(onPressed: () {Navigator.of(context).pushReplacementNamed("/categoryScreen");}, child: Text("Bread"), textColor: Colors.black.withOpacity(0.4),),
+                      FlatButton(onPressed: () {Navigator.of(context).pushReplacementNamed("/categoryScreen");}, child: Text("Snack"), textColor: Colors.black.withOpacity(0.4),),
+                      FlatButton(onPressed: () {Navigator.of(context).pushReplacementNamed("/categoryScreen");}, child: Text("Legume"), textColor: Colors.black.withOpacity(0.4),),
+                    
                     ],
                   ),
                 
               ),
               SizedBox(height: 40),
               Padding(
-                padding: const EdgeInsets.only(left: 300),
+                padding: const EdgeInsets.only(left: 280),
                 child: FlatButton(
                   onPressed: () {
                     Navigator.of(context).pushReplacementNamed("/categoryScreen");
@@ -97,14 +98,17 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                         ),
                         Positioned(
-                          top: 165,
+                          top: 150,
                           left: 55,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: <Widget>[
-                              Text("SAYVE", style: TextStyle(color: kTextColor, fontSize: 17,),
+                              FlatButton(onPressed: () {Navigator.of(context).pushReplacementNamed("/productScreen");}, 
+                              child: Text("SAYVE", style: TextStyle(color: kTextColor, fontSize: 17,),
                               textAlign: TextAlign.center,
                               ),
+                              ),
+                              
                               Text("Vegan \nWalnut Cheese", style: TextStyle(color: Colors.black, fontSize: 18),
                               textAlign: TextAlign.center,
                               ),
@@ -153,13 +157,15 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                         ),
                         Positioned(
-                          top: 165,
+                          top: 150,
                           left: 40,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: <Widget>[
-                              Text("MIYOKO’S", style: TextStyle(color: kTextColor, fontSize: 17),
+                              FlatButton(onPressed: () {Navigator.of(context).pushReplacementNamed("/productScreen");}, 
+                              child: Text("MIYOKO'S", style: TextStyle(color: kTextColor, fontSize: 17,),
                               textAlign: TextAlign.center,
+                              ),
                               ),
                               Text("Vegan \nCream Cheese", style: TextStyle(color: Colors.black, fontSize: 18),
                               textAlign: TextAlign.center,
@@ -190,24 +196,6 @@ class _HomeScreenState extends State<HomeScreen> {
         ],
         
       ),
-    );
-  }
-}
-
-class CategoryTitle extends StatelessWidget {
-  final String title;
-  final bool active;
-  const CategoryTitle({
-    Key key,
-    this.active = false,
-    this.title,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(left: 20, right: 30),
-      child: Text(title, style: Theme.of(context).textTheme.button.copyWith(color: active ? kTextColor : Colors.black.withOpacity(0.4)),),
     );
   }
 }
