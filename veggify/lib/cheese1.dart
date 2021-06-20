@@ -1,9 +1,10 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:veggify/constants.dart';
 
-class ProductScreen extends StatelessWidget {
+class Cheese1 extends StatelessWidget {
 
 
   @override
@@ -11,7 +12,7 @@ class ProductScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.grey[200],
       body: Padding(
-        padding: const EdgeInsets.only(left: 20, right: 20, top: 45),
+        padding: const EdgeInsets.only(left: 20, right: 20, top: 80),
         child: Column(
           children: <Widget> [
             Row(
@@ -19,7 +20,8 @@ class ProductScreen extends StatelessWidget {
               children: [
                 GestureDetector(
                   onTap: () {
-                    Navigator.pop(context);
+                    Navigator.of(context)
+                                      .pushReplacementNamed("/dairyScreen");
                   },
                   child: SvgPicture.asset("assets/back.svg",
                   ),
@@ -52,35 +54,54 @@ class ProductScreen extends StatelessWidget {
                         style: TextStyle(color: Colors.black, fontSize: 30),
                   ),
                   Text(
-                  "100 g",
+                  "100 g\n",
                         style: TextStyle(color: Colors.black.withOpacity(0.4), fontSize: 20),
                   ),
-                  SizedBox(height: 15,),
-                  Text(
+                  Align(
+                    alignment: Alignment(-0.5, 0.6),
+                    child: Text(
                   "Ingredients",
                         style: TextStyle(color: kTextColor, fontSize: 20), textAlign: TextAlign.left,
-                  ),
+                  ),),
 
                   Container(
-                    margin: EdgeInsets.symmetric(vertical: 30),
+                    margin: EdgeInsets.symmetric(vertical: 20),
                     padding: EdgeInsets.all(6),
-                    height: 173,
-                    width: 323,
+                    height: 125,
+                    width: 280,
                     decoration: BoxDecoration(
                     shape: BoxShape.rectangle,
                     borderRadius: BorderRadius.circular(30),
                     color: Colors.white,
+                    boxShadow: [
+                      BoxShadow(
+                        color: kBoxShadowColor,
+                        blurRadius: 25,
+                      )
+                    ]
               ),
-              child: Column(children: <Widget>[
-                SizedBox(height: 25,),
-                Text("Energy (kj/kcal): 1218/291", style: TextStyle(color: Colors.black, fontSize: 18),textAlign: TextAlign.left,),
-                SizedBox(height: 5,),
-                Text("Oil (g): 21", style: TextStyle(color: Colors.black, fontSize: 18),textAlign: TextAlign.left,),
-                SizedBox(height: 5,),
-                Text("Sugar (g): 22", style: TextStyle(color: Colors.black, fontSize: 18),textAlign: TextAlign.left,),
-                SizedBox(height: 5,),
-                Text("Protein (g): 3.5", style: TextStyle(color: Colors.black, fontSize: 18),textAlign: TextAlign.left,),
-              ],),
+              child: Column(children: [
+                Text.rich(
+                  TextSpan(
+                    children: <InlineSpan> [
+                      TextSpan( text: "Energy (kj/kcal):   ", style:TextStyle(color: Colors.black, fontSize: 18,),), 
+                      TextSpan( text: "1218/291\n", style:TextStyle(color: Colors.black54, fontSize: 18),),
+                      TextSpan( text: "Oil (g):   ", style:TextStyle(color: Colors.black, fontSize: 18,),),
+                      TextSpan( text: "21\n", style:TextStyle(color: Colors.black54, fontSize: 18),),
+                      TextSpan( text: "Sugar (g):   ", style:TextStyle(color: Colors.black, fontSize: 18),),
+                      TextSpan( text: "22\n", style:TextStyle(color: Colors.black54, fontSize: 18),),
+                      TextSpan( text: "Protein (g):   ", style:TextStyle(color: Colors.black, fontSize: 18),),
+                      TextSpan( text: "3.5\n", style:TextStyle(color: Colors.black54, fontSize: 18),),
+                      
+                      
+
+                    ] )
+                )
+                
+              
+                
+              ],
+              ),
 
                   )
 

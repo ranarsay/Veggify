@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:veggify/constants.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -17,11 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
         children: <Widget>[
           Padding(
             padding: const EdgeInsets.only(left: 20, top: 90),
-            child: Align(
-              alignment: Alignment.topLeft,
-              child: SvgPicture.asset("assets/menu.svg", height: 15,
-              ),
-              ),
+           
               ),
               SizedBox(height: 30,),
               Padding(
@@ -35,8 +30,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 padding: EdgeInsets.only(left: 20),
                 child:  Row(
                     children: <Widget>[
-                      FlatButton(onPressed: () {Navigator.of(context).pushReplacementNamed("/categoryScreen");}, child: Text("Dairy"), textColor: kTextColor,),
-                      FlatButton(onPressed: () {Navigator.of(context).pushReplacementNamed("/categoryScreen");}, child: Text("Meat"), textColor: Colors.black.withOpacity(0.4),),
+                      FlatButton(onPressed: () {Navigator.of(context).pushReplacementNamed("/dairyScreen");}, child: Text("Dairy"), textColor: kTextColor,),
+                      FlatButton(onPressed: () {Navigator.of(context).pushReplacementNamed("/meatScreen");}, child: Text("Meat"), textColor: Colors.black.withOpacity(0.4),),
                       FlatButton(onPressed: () {Navigator.of(context).pushReplacementNamed("/categoryScreen");}, child: Text("Bread"), textColor: Colors.black.withOpacity(0.4),),
                       FlatButton(onPressed: () {Navigator.of(context).pushReplacementNamed("/categoryScreen");}, child: Text("Snack"), textColor: Colors.black.withOpacity(0.4),),
                       FlatButton(onPressed: () {Navigator.of(context).pushReplacementNamed("/categoryScreen");}, child: Text("Legume"), textColor: Colors.black.withOpacity(0.4),),
@@ -50,7 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 padding: const EdgeInsets.only(left: 280),
                 child: FlatButton(
                   onPressed: () {
-                    Navigator.of(context).pushReplacementNamed("/categoryScreen");
+                    Navigator.of(context).pushReplacementNamed("/dairyScreen");
                   },
                   child: Text("see more"), textColor: kTextColor,
                   )
@@ -59,7 +54,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 
                
-              SizedBox(height: 70),
+              SizedBox(height: 20),
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
@@ -79,6 +74,12 @@ class _HomeScreenState extends State<HomeScreen> {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(34),
                               color: Colors.white,
+                               boxShadow: [
+                                BoxShadow(
+                                color: kBoxShadowColor,
+                                blurRadius: 25,
+                              )
+                              ]
                             ),
                           ),
                           
@@ -138,6 +139,13 @@ class _HomeScreenState extends State<HomeScreen> {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(34),
                               color: Colors.white,
+                              boxShadow: [
+                                BoxShadow(
+                                color: kBoxShadowColor,
+                                blurRadius: 25,
+                              )
+                              ]
+                              
                             ),
                           ),
                           

@@ -1,8 +1,26 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:veggify/constants.dart';
+import 'package:veggify/home_screen.dart';
 
-class WelcomeScreen extends StatelessWidget {
+class WelcomeScreen extends StatefulWidget {
   @override
+  _WelcomeScreenState createState() => _WelcomeScreenState();
+}
+
+class _WelcomeScreenState extends State<WelcomeScreen> {
+
+  @override
+
+  void initState() {
+    super.initState();
+    Timer(
+      Duration(seconds: 5),
+      () => Navigator.of(context).pushReplacement(MaterialPageRoute(
+            builder: (BuildContext context) => HomeScreen())));
+
+  }
   Widget build(BuildContext context) {
     final _width = MediaQuery.of(context).size.width;
     final _height = MediaQuery.of(context).size.height;

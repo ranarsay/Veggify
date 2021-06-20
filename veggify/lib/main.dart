@@ -1,8 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:veggify/category_screen.dart';
+import 'package:veggify/meat1.dart';
+import 'package:veggify/meat2.dart';
 import 'welcome_screen.dart';
 import 'home_screen.dart';
-import 'product_screen.dart';
+import 'cheese1.dart';
+import 'cheese2.dart';
+import 'dairy.dart';
+import 'milk1.dart';
+import 'milk2.dart';
+import 'milk3.dart';
+import 'milk4.dart';
+import 'meat.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,14 +25,6 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
 
-  void initState(){
-    super.initState();
-    Future.delayed(Duration(seconds: 3), () {
-      Navigator.push(
-        context, MaterialPageRoute(builder: (context) => HomeScreen()));
-
-    });
-  }
   Widget build(BuildContext context) {
     return Container(
       child: MaterialApp(
@@ -38,12 +38,20 @@ class _MyAppState extends State<MyApp> {
             ))
             ,
         ),
-        home: HomeScreen(),
+        home: WelcomeScreen(),
         routes: <String, WidgetBuilder> {
          "/welcome" : (BuildContext context) => WelcomeScreen(),
          "/home" : (BuildContext context) => HomeScreen(),
-         "/categoryScreen" : (BuildContext context) => CategoryScreen(),
-         "/productScreen" : (BuildContext context) => ProductScreen(),
+         "/cheese1" : (BuildContext context) => Cheese1(),
+         "/cheese2" : (BuildContext context) => Cheese2(),
+         "/milk1" : (BuildContext context) => Milk1(),
+         "/milk2" : (BuildContext context) => Milk2(),
+         "/milk3" : (BuildContext context) => Milk3(),
+         "/milk4" : (BuildContext context) => Milk4(),
+         "/dairyScreen" : (BuildContext context) => DairyScreen(),
+         "/meatScreen" : (BuildContext context) => MeatScreen(),
+         "/meat1" : (BuildContext context) => Meat1(),
+         "/meat2" : (BuildContext context) => Meat2(),
         },
       ),
 
