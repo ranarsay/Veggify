@@ -32,9 +32,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     children: <Widget>[
                       FlatButton(onPressed: () {Navigator.of(context).pushReplacementNamed("/dairyScreen");}, child: Text("Dairy"), textColor: kTextColor,),
                       FlatButton(onPressed: () {Navigator.of(context).pushReplacementNamed("/meatScreen");}, child: Text("Meat"), textColor: Colors.black.withOpacity(0.4),),
-                      FlatButton(onPressed: () {Navigator.of(context).pushReplacementNamed("/categoryScreen");}, child: Text("Bread"), textColor: Colors.black.withOpacity(0.4),),
-                      FlatButton(onPressed: () {Navigator.of(context).pushReplacementNamed("/categoryScreen");}, child: Text("Snack"), textColor: Colors.black.withOpacity(0.4),),
-                      FlatButton(onPressed: () {Navigator.of(context).pushReplacementNamed("/categoryScreen");}, child: Text("Legume"), textColor: Colors.black.withOpacity(0.4),),
+                      FlatButton(onPressed: () {Navigator.of(context).pushReplacementNamed("/breadScreen");}, child: Text("Bread"), textColor: Colors.black.withOpacity(0.4),),
+                      FlatButton(onPressed: () {Navigator.of(context).pushReplacementNamed("/snackScreen");}, child: Text("Snack"), textColor: Colors.black.withOpacity(0.4),),
+                      FlatButton(onPressed: () {Navigator.of(context).pushReplacementNamed("/legumeScreen");}, child: Text("Legume"), textColor: Colors.black.withOpacity(0.4),),
                     
                     ],
                   ),
@@ -104,7 +104,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: <Widget>[
-                              FlatButton(onPressed: () {Navigator.of(context).pushReplacementNamed("/productScreen");}, 
+                              FlatButton(onPressed: () {Navigator.of(context).pushReplacementNamed("/cheese1");}, 
                               child: Text("SAYVE", style: TextStyle(color: kTextColor, fontSize: 17,),
                               textAlign: TextAlign.center,
                               ),
@@ -170,7 +170,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: <Widget>[
-                              FlatButton(onPressed: () {Navigator.of(context).pushReplacementNamed("/productScreen");}, 
+                              FlatButton(onPressed: () {Navigator.of(context).pushReplacementNamed("/cheese2");}, 
                               child: Text("MIYOKO'S", style: TextStyle(color: kTextColor, fontSize: 17,),
                               textAlign: TextAlign.center,
                               ),
