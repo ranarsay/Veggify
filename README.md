@@ -1,6 +1,6 @@
 # Veggify
- Vegan food ingredients app
- UI of this app: https://www.figma.com/file/XNYdxRM2ypnptEuwRmGZEb/IE-372?node-id=0%3A1
+ Vegan food ingredients app.
+ https://www.figma.com/file/XNYdxRM2ypnptEuwRmGZEb/IE-372?node-id=0%3A1
  General information about the study
 In recent years, people are more curious about vegan and vegetarian diets. With the
 increase of vegan nutrition, it is easier to find vegan products in the markets. And the variety
