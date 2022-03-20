@@ -20,11 +20,11 @@ This easy to use app will fill an important void in the app markets.
 
 ## Screen Shots
 ### Welcome Page
-![](./assets/screenshots/1)
+![](./assets/screenshots/1.png)
 
 
 ### Home Page
-<img src="./assets/screenshots/2">
+<img src="./assets/screenshots/2.png">
 
 ### Product List Page Example 1
 <img src="./assets/screenshots/3">
