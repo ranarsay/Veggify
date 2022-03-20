@@ -20,17 +20,17 @@ This easy to use app will fill an important void in the app markets.
 
 ## Screen Shots
 ### Welcome Page
-![](./assets/screenshots/1.png)
+![](./veggify/assets/screenshots/1.png)
 
 
 ### Home Page
-<img src="./assets/screenshots/2.png">
+<img src="./veggify/assets/screenshots/1.png">
 
 ### Product List Page Example 1
-<img src="./assets/screenshots/3">
+<img src="./veggify/assets/screenshots/1.png">
 
 ### Product Lists Page Example 2
-<img src="./assets/screenshots/4">
+<img src="./veggify/assets/screenshots/1.png">
 
 ### Product Page
-<img src="./assets/screenshots/5">
+<img src="./veggify/assets/screenshots/1.png">
