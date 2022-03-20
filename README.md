@@ -20,7 +20,8 @@ This easy to use app will fill an important void in the app markets.
 
 ## Screen Shots
 ### Welcome Page
-<img src="./assets/screenshots/1">
+![](./assets/screenshots/1)
+
 
 ### Home Page
 <img src="./assets/screenshots/2">
