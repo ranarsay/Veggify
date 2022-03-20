@@ -17,3 +17,19 @@ packaged goods and beverages. Foods will be listed according to the category the
 chooses, and by searching a product, the user will be able to check the product’s content of
 the amount of protein, sugar, fat, salt in that product and so, they can make healthy choices.
 This easy to use app will fill an important void in the app markets.
+
+## Screen Shots
+### Welcome Page
+<img src="./assets/screenshots/1">
+
+### Home Page
+<img src="./assets/screenshots/2">
+
+### Product List Page Example 1
+<img src="./assets/screenshots/3">
+
+### Product Lists Page Example 2
+<img src="./assets/screenshots/4">
+
+### Product Page
+<img src="./assets/screenshots/5">
