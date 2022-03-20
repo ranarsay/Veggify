@@ -1,16 +1,22 @@
 # veggify
 
-A new Flutter project.
+Vegan food ingredients app. https://www.figma.com/file/XNYdxRM2ypnptEuwRmGZEb/IE-372?node-id=0%3A1 General information about the study In recent years, people are more curious about vegan and vegetarian diets. With the increase of vegan nutrition, it is easier to find vegan products in the markets. And the variety of vegan products is increasing day by day. However the biggest problem faced by vegans or vegetarians is that they need an adequate intake of protein, vitamin, minerals such as calcium, iron, and B12. Unconscious nutrition in a vegan diet can lead to many health problems. Not all vegan store-bought products are healthy and most times the packages can be misleading about the product’s content. For these reasons, choosing healthy and vegan products can be challenging. The aim of this project is to provide a guide where consumers can reach the nutritional contents they need. We decided to develop a mobile application to help people having these difficulties. There are food categories in this app such as vegetables, legumes, grains, packaged goods and beverages. Foods will be listed according to the category the user chooses, and by searching a product, the user will be able to check the product’s content of the amount of protein, sugar, fat, salt in that product and so, they can make healthy choices. This easy to use app will fill an important void in the app markets.
 
-## Getting Started
+## Screen Shots
+### Welcome Page
+<img src="./assets/screenshots/1">
 
-This project is a starting point for a Flutter application.
+### Home Page
+<img src="./assets/screenshots/2">
 
-A few resources to get you started if this is your first Flutter project:
+### Product List Page Example 1
+<img src="./assets/screenshots/3">
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+### Product Lists Page Example 2
+<img src="./assets/screenshots/4">
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Product Page
+<img src="./assets/screenshots/5">
+
+
+

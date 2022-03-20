@@ -16,7 +16,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
   void initState() {
     super.initState();
     Timer(
-      Duration(seconds: 5),
+      Duration(seconds: 5 ),
       () => Navigator.of(context).pushReplacement(MaterialPageRoute(
             builder: (BuildContext context) => HomeScreen())));
 
