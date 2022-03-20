@@ -24,13 +24,13 @@ This easy to use app will fill an important void in the app markets.
 
 
 ### Home Page
-<img src="./veggify/assets/screenshots/1.png">
+<img src="./veggify/assets/screenshots/2.png">
 
 ### Product List Page Example 1
-<img src="./veggify/assets/screenshots/1.png">
+<img src="./veggify/assets/screenshots/3.png">
 
 ### Product Lists Page Example 2
-<img src="./veggify/assets/screenshots/1.png">
+<img src="./veggify/assets/screenshots/4.png">
 
 ### Product Page
-<img src="./veggify/assets/screenshots/1.png">
+<img src="./veggify/assets/screenshots/5.png">
